@@ -1,18 +1,1 @@
-{
-    "users": [
-        {
-            "No": 1,
-            "Name": "_xters",
-            "ID": "429458093265649686",
-            "Key": "tA6XaH5ht7Q2ALxA",
-            "IDRB": ""
-        },
-        {
-            "No": 2,
-            "Name": "lockkree.man.",
-            "ID": "885029685870874644",
-            "Key": "quOzp7HpWn0XqZ4H",
-            "IDRB": ""
-        }
-    ]
-}
+{"users": [{"No": 1, "Name": "_xters", "ID": "429458093265649686", "Key": "WLjDxah01sF6ESer", "IDRB": ""}, {"No": 2, "Name": "lockkree.man.", "ID": "885029685870874644", "Key": "quOzp7HpWn0XqZ4H", "IDRB": ""}]}
