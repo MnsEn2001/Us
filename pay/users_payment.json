@@ -1,1 +1,30 @@
-{}
+{
+    "429458093265649686": {
+        "userId": 429458093265649686,
+        "point": 1000000000,
+        "all-point": 1000000000,
+        "transaction": [
+            {
+                "topup": {
+                    "url": "https://gift.truemoney.com/campaign/?v=ad8fdf1f71641741809ea1fd3a621b1b67I",
+                    "amount": 1000000000,
+                    "time": "2024-07-22 17:06:17.284827"
+                }
+            }
+        ]
+    },
+    "885029685870874644": {
+        "userId": 885029685870874644,
+        "point": 1000000000,
+        "all-point": 1000000000,
+        "transaction": [
+            {
+                "topup": {
+                    "url": "https://gift.truemoney.com/campaign/?v=306926b1bade4a319bf610716e3c3ed80cm",
+                    "amount": 1000000000,
+                    "time": "2024-07-22 17:06:17.284827"
+                }
+            }
+        ]
+    }
+}
