@@ -27,8 +27,8 @@ function GetRobloxIDAndSendMessage(key)
     SendMessage(key, robloxID)
 end
 
-function Loading_Script()
-    local Game = loadstring(game:HttpGet('https://raw.githubusercontent.com/EnJirad/GUI/main/Main_New.lua'))()
+local function LoadScript(scriptUrl)
+    local script = loadstring(game:HttpGet(scriptUrl))()
 end
 
 local function NotifyUser(title, text)
@@ -45,15 +45,22 @@ end
 
 local function CheckIDRB(key, robloxID)
     local whitelistURLs = {
-        "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V1.json",
-        "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V2.json",
-        "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_TQ_V1.json",
-        "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_TQ_V2.json"
+        ["1"] = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V1.json",
+        ["2"] = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V2.json",
+        ["3"] = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_TQ_V1.json",
+        ["4"] = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_TQ_V2.json"
+    }
+    
+    local Loading_Scripts = {
+        ["1"] = "https://raw.githubusercontent.com/MnsEn2001/Us/main/Game/LRWV1",
+        ["2"] = "https://raw.githubusercontent.com/MnsEn2001/Us/main/Game/LRWV2",
+        ["3"] = "https://raw.githubusercontent.com/MnsEn2001/Us/main/Game/TQV1",
+        ["4"] = "https://raw.githubusercontent.com/MnsEn2001/Us/main/Game/TQV2"
     }
 
     local idFound = false
 
-    for _, url in ipairs(whitelistURLs) do
+    for id, url in pairs(whitelistURLs) do
         local response = game:HttpGet(url)
         local whitelist = HttpService:JSONDecode(response)
 
@@ -62,12 +69,12 @@ local function CheckIDRB(key, robloxID)
                 if user.IDRB == "" then
                     GetRobloxIDAndSendMessage(key)
                     NotifyUser("Welcome", "ยินดีต้อนรับ สู่ สคริปต์")
-                    Loading_Script()
+                    LoadScript(Loading_Scripts[id])
                     idFound = true
                     break
                 elseif robloxID == tonumber(user.IDRB) then
                     NotifyUser("Welcome", "ยินดีต้อนรับ สู่ สคริปต์")
-                    Loading_Script()
+                    LoadScript(Loading_Scripts[id])
                     idFound = true
                     break
                 end
