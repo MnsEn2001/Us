@@ -1,0 +1,9 @@
+local function NotifyUser(title, text)
+    game.StarterGui:SetCore("SendNotification", {
+        Title = title,
+        Text = text,
+        Duration = 5
+    })
+end
+
+NotifyUser("Game", "Legends Re:Written : V2")
