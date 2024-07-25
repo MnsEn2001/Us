@@ -39,6 +39,10 @@ local function NotifyUser(title, text)
     })
 end
 
+local function CopyToClipboard(text)
+    setclipboard(text)
+end
+
 local function CheckIDRB(key, robloxID)
     local whitelistURLs = {
         "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V1.json",
