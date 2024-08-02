@@ -16,33 +16,6 @@ local function CopyToClipboard(text)
     setclipboard(text)
 end
 
-local function CheckKeyRun(key, robloxID)
-    local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V1.json"
-    local idFound = false
-
-    local response = game:HttpGet(whitelistURL)
-    local whitelist = HttpService:JSONDecode(response)
-
-    for _, user in pairs(whitelist.users) do
-        if key == user.Key then
-            if user.IDRB == "" then
-                Run_Script()
-                idFound = true
-                break
-            elseif robloxID == tonumber(user.IDRB) then
-                Run_Script()
-                idFound = true
-                break
-            end
-        end
-    end
-
-    if not idFound then
-        NotifyUser("Error", "คุณเข้าผิดวิธีกรุณาใช้ Key ในการเข้า ได้คัดลอกลิงค์ดิสคอร์ดไว้ที่คลิปบอร์ดคุณแล้ว")
-        CopyToClipboard("https://discord.com/invite/StxhWJE4pb")
-    end
-end
-
 local function Run_Script()
 local Xlib = loadstring(game:HttpGet('https://raw.githubusercontent.com/EnJirad/GUI/main/Xlib'))()
 local Window = Xlib:MakeWindow({Name = "Legends Re:Written World 1"})
@@ -2502,6 +2475,33 @@ Xlib:MakeButton({
         end
     end
 }) 
+end
+
+local function CheckKeyRun(key, robloxID)
+    local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V1.json"
+    local idFound = false
+
+    local response = game:HttpGet(whitelistURL)
+    local whitelist = HttpService:JSONDecode(response)
+
+    for _, user in pairs(whitelist.users) do
+        if key == user.Key then
+            if user.IDRB == "" then
+                Run_Script()
+                idFound = true
+                break
+            elseif robloxID == tonumber(user.IDRB) then
+                Run_Script()
+                idFound = true
+                break
+            end
+        end
+    end
+
+    if not idFound then
+        NotifyUser("Error", "คุณเข้าผิดวิธีกรุณาใช้ Key ในการเข้า ได้คัดลอกลิงค์ดิสคอร์ดไว้ที่คลิปบอร์ดคุณแล้ว")
+        CopyToClipboard("https://discord.com/invite/StxhWJE4pb")
+    end
 end
 
 CheckKeyRun(key, robloxID)
