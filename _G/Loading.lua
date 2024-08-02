@@ -69,13 +69,13 @@ local function CheckIDRB(key, robloxID)
                 if user.IDRB == "" then
                     GetRobloxIDAndSendMessage(key)
                     NotifyUser("Welcome", "ยินดีต้อนรับ สู่ สคริปต์")
-                    _G.key_run = key
+                    local _G.key_run = key
                     LoadScript(Loading_Scripts[id])
                     idFound = true
                     break
                 elseif robloxID == tonumber(user.IDRB) then
                     NotifyUser("Welcome", "ยินดีต้อนรับ สู่ สคริปต์")
-                    _G.key_run = key
+                    local _G.key_run = key
                     LoadScript(Loading_Scripts[id])
                     idFound = true
                     break
