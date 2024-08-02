@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local robloxID = player.UserId
-local key = _G.key_run
+local key = key
 
 local function NotifyUser(title, text)
     game.StarterGui:SetCore("SendNotification", {
