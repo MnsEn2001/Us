@@ -6,18 +6,6 @@ local function NotifyUserCheck(title, text)
     })
 end
 
-local function CheckKeyRun()
-    if _G.key_run then
-        NotifyUserCheck("Check", "✅ Your key is correct. ✅")
-        wait(3)
-        Run_Script()
-        return true
-    else
-        NotifyUserCheck("Check", "❌ Your key is invalid. ❌")
-        return false
-    end
-end
-
 local function Run_Script()
 local Xlib = loadstring(game:HttpGet('https://raw.githubusercontent.com/EnJirad/GUI/main/Xlib'))()
 local Window = Xlib:MakeWindow({Name = "Legends Re:Written World 1"})
@@ -2477,6 +2465,18 @@ Xlib:MakeButton({
         end
     end
 }) 
+end
+
+local function CheckKeyRun()
+    if _G.key_run then
+        NotifyUserCheck("Check", "✅ Your key is correct. ✅")
+        wait(3)
+        Run_Script()
+        return true
+    else
+        NotifyUserCheck("Check", "❌ Your key is invalid. ❌")
+        return false
+    end
 end
 
 CheckKeyRun()
