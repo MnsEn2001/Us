@@ -1,4 +1,4 @@
-local function NotifyUser(title, text)
+local function NotifyUserCheck(title, text)
     game.StarterGui:SetCore("SendNotification", {
         Title = title,
         Text = text,
@@ -7,11 +7,11 @@ local function NotifyUser(title, text)
 end
 
 local function Run_Script()
-    NotifyUser("Game", "Treasure Quest : V2")
+    NotifyUserCheck("Game", "Treasure Quest : V2")
 end
 
 local function CheckKeyRun()
-    if _G.key_run then
+    if _G.key_run and type(_G.key_run) == "string" and _G.key_run ~= "" then
         NotifyUserCheck("Check", "✅ Your key is correct. ✅")
         wait(3)
         Run_Script()
