@@ -16,6 +16,10 @@ local function CopyToClipboard(text)
     setclipboard(text)
 end
 
+local function Run_Script()
+    NotifyUser("Game", "Legends Re:Written : V2")
+end
+
 local function CheckKeyRun(key, robloxID)
     local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V2.json"
     local idFound = false
@@ -41,10 +45,6 @@ local function CheckKeyRun(key, robloxID)
         NotifyUser("Error", "คุณเข้าผิดวิธีกรุณาใช้ Key ในการเข้า ได้คัดลอกลิงค์ดิสคอร์ดไว้ที่คลิปบอร์ดคุณแล้ว")
         CopyToClipboard("https://discord.com/invite/StxhWJE4pb")
     end
-end
-
-local function Run_Script()
-    NotifyUser("Game", "Legends Re:Written : V2")
 end
 
 CheckKeyRun(key, robloxID)
