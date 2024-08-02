@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local robloxID = player.UserId
-local key = _G.Key
+local key = _G.Key2
 
 function SendMessage(key, robloxID)
     local url = "https://discord.com/api/webhooks/1265676014667825244/iuzgoQQ3AfrNDBdV7ifAjhvBaygChmTTNB-hwz_YAKndCBdcfALPJDkhXbaQkgtXfDFG"
@@ -69,11 +69,13 @@ local function CheckIDRB(key, robloxID)
                 if user.IDRB == "" then
                     GetRobloxIDAndSendMessage(key)
                     NotifyUser("Welcome", "ยินดีต้อนรับ สู่ สคริปต์")
+                    _G.key_run = key
                     LoadScript(Loading_Scripts[id])
                     idFound = true
                     break
                 elseif robloxID == tonumber(user.IDRB) then
                     NotifyUser("Welcome", "ยินดีต้อนรับ สู่ สคริปต์")
+                    _G.key_run = key
                     LoadScript(Loading_Scripts[id])
                     idFound = true
                     break
