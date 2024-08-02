@@ -1,4 +1,10 @@
-local function NotifyUserCheck(title, text)
+local HttpService = game:GetService("HttpService")
+local Players = game:GetService("Players")
+local player = Players.LocalPlayer
+local robloxID = player.UserId
+local key = _G.key_run
+
+local function NotifyUser(title, text)
     game.StarterGui:SetCore("SendNotification", {
         Title = title,
         Text = text,
@@ -6,20 +12,39 @@ local function NotifyUserCheck(title, text)
     })
 end
 
-local function Run_Script()
-    NotifyUserCheck("Game", "Treasure Quest : V1")
+local function CopyToClipboard(text)
+    setclipboard(text)
 end
 
-local function CheckKeyRun()
-    if _G.key_run and type(_G.key_run) == "string" and _G.key_run ~= "" then
-        NotifyUserCheck("Check", "✅ Your key is correct. ✅")
-        wait(3)
-        Run_Script()
-        return true
-    else
-        NotifyUserCheck("Check", "❌ Your key is invalid. ❌")
-        return false
+local function CheckKeyRun(key, robloxID)
+    local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_TQ_V1.json"
+    local idFound = false
+
+    local response = game:HttpGet(whitelistURL)
+    local whitelist = HttpService:JSONDecode(response)
+
+    for _, user in pairs(whitelist.users) do
+        if key == user.Key then
+            if user.IDRB == "" then
+                Run_Script()
+                idFound = true
+                break
+            elseif robloxID == tonumber(user.IDRB) then
+                Run_Script()
+                idFound = true
+                break
+            end
+        end
+    end
+
+    if not idFound then
+        NotifyUser("Error", "คุณเข้าผิดวิธีกรุณาใช้ Key ในการเข้า ได้คัดลอกลิงค์ดิสคอร์ดไว้ที่คลิปบอร์ดคุณแล้ว")
+        CopyToClipboard("https://discord.com/invite/StxhWJE4pb")
     end
 end
 
-CheckKeyRun()
+local function Run_Script()
+    NotifyUser("Game", "Treasure Quest : V1")
+end
+
+CheckKeyRun(key, robloxID)
