@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local robloxID = player.UserId
-local keyR = key
+local key = _G.Key2
 
 local function NotifyUser(title, text)
     game.StarterGui:SetCore("SendNotification", {
@@ -16,7 +16,7 @@ local function CopyToClipboard(text)
     setclipboard(text)
 end
 
-local function CheckKeyRun(keyR, robloxID)
+local function CheckKeyRun(key, robloxID)
     local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_TQ_V2.json"
     local idFound = false
 
@@ -24,7 +24,7 @@ local function CheckKeyRun(keyR, robloxID)
     local whitelist = HttpService:JSONDecode(response)
 
     for _, user in pairs(whitelist.users) do
-        if keyR == user.Key then
+        if key == user.Key then
             if user.IDRB == "" then
                 Run_Script()
                 idFound = true
@@ -47,4 +47,4 @@ local function Run_Script()
     NotifyUser("Game", "Treasure Quest : V2")
 end
 
-CheckKeyRun(keyR, robloxID)
+CheckKeyRun(key, robloxID)
