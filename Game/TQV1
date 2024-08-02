@@ -6,4 +6,20 @@ local function NotifyUser(title, text)
     })
 end
 
-NotifyUser("Game", "Treasure Quest : V1")
+local function Run_Script()
+    NotifyUser("Game", "Treasure Quest : V1")
+end
+
+local function CheckKeyRun()
+    if _G.key_run then
+        NotifyUserCheck("Check", "✅ Your key is correct. ✅")
+        wait(3)
+        Run_Script()
+        return true
+    else
+        NotifyUserCheck("Check", "❌ Your key is invalid. ❌")
+        return false
+    end
+end
+
+CheckKeyRun()
