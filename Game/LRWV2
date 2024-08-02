@@ -2,7 +2,7 @@ local HttpService = game:GetService("HttpService")
 local Players = game:GetService("Players")
 local player = Players.LocalPlayer
 local robloxID = player.UserId
-local keyrun = _G.key_run
+local key = _G.key_run
 
 local function NotifyUser(title, text)
     game.StarterGui:SetCore("SendNotification", {
@@ -16,12 +16,8 @@ local function CopyToClipboard(text)
     setclipboard(text)
 end
 
-local function Run_Script()
-    NotifyUser("Game", "Legends Re:Written : V2")
-end
-
 local function CheckKeyRun(key, robloxID)
-    local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_TQ_V2.json"
+    local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V2.json"
     local idFound = false
 
     local response = game:HttpGet(whitelistURL)
@@ -29,7 +25,11 @@ local function CheckKeyRun(key, robloxID)
 
     for _, user in pairs(whitelist.users) do
         if key == user.Key then
-            if user.IDRB == "" or robloxID == tonumber(user.IDRB) then
+            if user.IDRB == "" then
+                Run_Script()
+                idFound = true
+                break
+            elseif robloxID == tonumber(user.IDRB) then
                 Run_Script()
                 idFound = true
                 break
@@ -38,9 +38,13 @@ local function CheckKeyRun(key, robloxID)
     end
 
     if not idFound then
-        NotifyUser("Error", "Key ไม่ถูกต้อง ได้คัดลอกลิงค์ดิสคอร์ดไว้ที่คลิปบอร์ดคุณแล้ว")
+        NotifyUser("Error", "คุณเข้าผิดวิธีกรุณาใช้ Key ในการเข้า ได้คัดลอกลิงค์ดิสคอร์ดไว้ที่คลิปบอร์ดคุณแล้ว")
         CopyToClipboard("https://discord.com/invite/StxhWJE4pb")
     end
 end
 
-CheckKeyRun(keyrun, robloxID)
+local function Run_Script()
+    NotifyUser("Game", "Legends Re:Written : V2")
+end
+
+CheckKeyRun(key, robloxID)
