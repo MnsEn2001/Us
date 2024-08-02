@@ -17,7 +17,7 @@ local function CopyToClipboard(text)
 end
 
 local function CheckKeyRun(key, robloxID)
-    local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_TQ_V2.json"
+    local whitelistURL = "https://raw.githubusercontent.com/MnsEn2001/Us/main/database/User_LRW_V1.json"
     local idFound = false
 
     local response = game:HttpGet(whitelistURL)
