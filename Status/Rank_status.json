@@ -6,6 +6,15 @@
                 "channelId": 1128720968760696863,
                 "messageId": 1271069056853737493
             }
+        },
+        {
+            "welcome": {
+                "serverId": 1088294110747693168,
+                "channelId": 1095586622524882965,
+                "messageId": 1271069479312424991,
+                "emoji": "\u2705",
+                "reaction_timestamps": {}
+            }
         }
     ]
 }
