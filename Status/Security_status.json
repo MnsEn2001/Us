@@ -4,7 +4,7 @@
             "security": {
                 "serverId": 1088294110747693168,
                 "channelId": 1260618312522662002,
-                "messageId": 1271011610714181665,
+                "messageId": 1271011852633112577,
                 "status": "enabled",
                 "open_time": "2024-08-08 14:43:00"
             }
@@ -13,9 +13,18 @@
             "security": {
                 "serverId": 1088294110747693168,
                 "channelId": 1260618312522662002,
-                "messageId": 1271011610714181665,
+                "messageId": 1271011852633112577,
                 "status": "enabled",
                 "open_time": "2024-08-08 14:46:19"
+            }
+        },
+        {
+            "security": {
+                "serverId": 1088294110747693168,
+                "channelId": 1260618312522662002,
+                "messageId": 1271011852633112577,
+                "status": "disabled",
+                "close_time": "2024-08-08 14:47:17"
             }
         }
     ]
