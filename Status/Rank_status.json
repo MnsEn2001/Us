@@ -15,6 +15,13 @@
                 "emoji": "\u2705",
                 "reaction_timestamps": {}
             }
+        },
+        {
+            "bypass": {
+                "serverId": 1088294110747693168,
+                "channelId": 1266359021569310972,
+                "messageId": 1271069739988549704
+            }
         }
     ]
 }
