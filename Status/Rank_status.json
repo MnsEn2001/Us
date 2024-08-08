@@ -20,7 +20,11 @@
                 "channelId": 1095586622524882965,
                 "messageId": 1270934910051287130,
                 "emoji": "\u2705",
-                "reaction_timestamps": {}
+                "reaction_timestamps": {
+                    "429458093265649686": {
+                        "last_reaction": "2024-08-08T09:51:47.384764"
+                    }
+                }
             }
         }
     ]
