@@ -1,1 +1,13 @@
-
+{
+    "config": [
+        {
+            "security": {
+                "serverId": 1088294110747693168,
+                "channelId": 1260618312522662002,
+                "messageId": 1271010778320998432,
+                "status": "enabled",
+                "open_time": "2024-08-08 14:43:00"
+            }
+        }
+    ]
+}
