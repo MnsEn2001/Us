@@ -4,9 +4,10 @@
             "security": {
                 "serverId": 1088294110747693168,
                 "channelId": 1260618312522662002,
-                "messageId": 1271686206194843719,
-                "security_enabled": false,
-                "close_time": "2024-08-10 11:26:57"
+                "messageId": 1271686239891751005,
+                "security_enabled": true,
+                "close_time": "2024-08-10 11:26:57",
+                "open_time": "2024-08-10 11:27:05"
             }
         }
     ]
