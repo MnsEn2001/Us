@@ -8,7 +8,11 @@
                     "messageId": 1271678835301158912,
                     "emoji": "\u2705"
                 },
-                "reaction_timestamps": {}
+                "reaction_timestamps": {
+                    "429458093265649686": {
+                        "last_reaction": "2024-08-10T10:57:45.907751"
+                    }
+                }
             }
         }
     ]
