@@ -6,6 +6,16 @@
                 "channelId": 1128720968760696863,
                 "messageId": 1271846570807267348
             }
+        },
+        {
+            "welcome": {
+                "command": {
+                    "serverId": 1088294110747693168,
+                    "channelId": 1095586622524882965,
+                    "messageId": 1271846902899544157
+                },
+                "reaction_timestamps": {}
+            }
         }
     ]
 }
