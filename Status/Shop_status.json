@@ -7,14 +7,7 @@
                 "messageId": 1271765894468599818
             },
             "ticket": {
-                "status": {
-                    "1271771734160314526": {
-                        "userId": 429458093265649686,
-                        "status": "closed",
-                        "description": "hhhgg",
-                        "messageId": null
-                    }
-                }
+                "status": {}
             }
         },
         {
