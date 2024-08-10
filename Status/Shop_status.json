@@ -24,9 +24,9 @@
                 "status": {
                     "1271843347543359649": {
                         "userId": 429458093265649686,
-                        "status": "open",
-                        "description": "iigguj",
-                        "messageId": 1271843353440551044
+                        "status": "closed",
+                        "description": "N/A",
+                        "messageId": null
                     }
                 }
             }
