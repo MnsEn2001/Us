@@ -1,3 +1,14 @@
 {
-    "config": []
+    "config": [
+        {
+            "welcome": {
+                "command": {
+                    "serverId": 1088294110747693168,
+                    "channelId": 1095586622524882965,
+                    "messageId": 1271758943630135346
+                },
+                "reaction_timestamps": {}
+            }
+        }
+    ]
 }
