@@ -1,16 +1,6 @@
 {
     "config": [
         {
-            "ticket": {
-                "command": {
-                    "serverId": 1088294110747693168,
-                    "channelId": 1106166838586511421,
-                    "messageId": 1271830809262948353
-                },
-                "status": {}
-            }
-        },
-        {
             "admin": {
                 "serverId": 1088294110747693168,
                 "channelId": 1128720968760696863,
