@@ -5,6 +5,16 @@
                 "serverId": 1088294110747693168,
                 "channelId": 1129264694977376317,
                 "messageId": 1271765976312057987
+            },
+            "ticket": {
+                "status": {
+                    "1271773154074955847": {
+                        "userId": 429458093265649686,
+                        "status": "open",
+                        "description": "jdjjdjd",
+                        "messageId": 1271773159858896977
+                    }
+                }
             }
         },
         {
