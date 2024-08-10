@@ -28,7 +28,14 @@
                     "channelId": 1106166838586511421,
                     "messageId": 1271796548753424395
                 },
-                "status": {}
+                "status": {
+                    "1271814010723106977": {
+                        "userId": 429458093265649686,
+                        "status": "open",
+                        "description": "uuuif",
+                        "messageId": 1271814014413832193
+                    }
+                }
             }
         }
     ]
