@@ -32,13 +32,6 @@
             }
         },
         {
-            "redeem": {
-                "serverId": 1088294110747693168,
-                "is_running": true,
-                "channelId": 1264141761731887115
-            }
-        },
-        {
             "setup_user": {
                 "key": {},
                 "hwid": {}
