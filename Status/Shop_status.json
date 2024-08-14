@@ -31,9 +31,9 @@
                 "status": {
                     "1273139235351957515": {
                         "userId": 429458093265649686,
-                        "status": "open",
-                        "description": "znjsjsjs",
-                        "messageId": 1273139241387429901
+                        "status": "closed",
+                        "description": "N/A",
+                        "messageId": null
                     }
                 }
             }
