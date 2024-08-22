@@ -1,8 +1,8 @@
 {
     "429458093265649686": {
         "userId": 429458093265649686,
-        "point": 20,
-        "all-point": 1001055020,
+        "point": 1000000000,
+        "all-point": 1000000000,
         "transaction": [
             {
                 "topup": {
@@ -13,13 +13,13 @@
             },
             {
                 "purchase": {
-                    "roleId": "2",
+                    "roleId": "1",
                     "time": "2024-08-01 11:34:55.980391"
                 }
             },
             {
                 "purchase": {
-                    "roleId": "1",
+                    "roleId": "2",
                     "time": "2024-08-01 11:35:15.430751"
                 }
             },
@@ -34,26 +34,12 @@
                     "roleId": "4",
                     "time": "2024-08-01 17:29:55.194965"
                 }
-            },
-            {
-                "topup": {
-                    "url": "https://gift.truemoney.com/campaign/?v=01917aa9196a7ea59df492e754385f6db7S",
-                    "amount": 10,
-                    "time": "2024-08-22 22:25:37.114741"
-                }
-            },
-            {
-                "topup": {
-                    "url": "https://gift.truemoney.com/campaign/?v=01917ab2461271269694e016bcd6334d1cu",
-                    "amount": 10,
-                    "time": "2024-08-22 22:27:09.363208"
-                }
             }
         ]
     },
     "885029685870874644": {
         "userId": 885029685870874644,
-        "point": 999999999,
+        "point": 1000000000,
         "all-point": 1000000000,
         "transaction": [
             {
