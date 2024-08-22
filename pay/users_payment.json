@@ -1,8 +1,8 @@
 {
     "429458093265649686": {
         "userId": 429458093265649686,
-        "point": 10,
-        "all-point": 1001055010,
+        "point": 20,
+        "all-point": 1001055020,
         "transaction": [
             {
                 "topup": {
@@ -40,6 +40,13 @@
                     "url": "https://gift.truemoney.com/campaign/?v=01917aa9196a7ea59df492e754385f6db7S",
                     "amount": 10,
                     "time": "2024-08-22 22:25:37.114741"
+                }
+            },
+            {
+                "topup": {
+                    "url": "https://gift.truemoney.com/campaign/?v=01917ab2461271269694e016bcd6334d1cu",
+                    "amount": 10,
+                    "time": "2024-08-22 22:27:09.363208"
                 }
             }
         ]
