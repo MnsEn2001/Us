@@ -14,7 +14,11 @@
                     "channelId": 1095586622524882965,
                     "messageId": 1273138604302012418
                 },
-                "reaction_timestamps": {}
+                "reaction_timestamps": {
+                    "1276722510863405198": {
+                        "last_reaction": "2024-08-24T18:11:03.792017"
+                    }
+                }
             }
         },
         {
