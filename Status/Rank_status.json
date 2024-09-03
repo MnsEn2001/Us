@@ -16,6 +16,13 @@
                 },
                 "reaction_timestamps": {}
             }
+        },
+        {
+            "bypass": {
+                "serverId": 1088294110747693168,
+                "channelId": 1266359021569310972,
+                "messageId": 1280389403331792988
+            }
         }
     ]
 }
