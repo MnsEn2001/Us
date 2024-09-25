@@ -1,3 +1,12 @@
 {
-    "config": []
+    "config": [
+        {
+            "fluxus": {
+                "429458093265649686": {
+                    "url": "https://flux.li/android/external/start.php?HWID=77d578db31d8c5078a77584a704bf9f41c8231c5874e0fba501cae61e8213be9e563fc9292486703d6e2d5e78d532048",
+                    "timestamps": "2024-09-25T00:02:09.682919+00:00"
+                }
+            }
+        }
+    ]
 }
