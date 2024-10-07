@@ -3,11 +3,11 @@
         {
             "security": {
                 "serverId": 1088294110747693168,
-                "channelId": 1259848797379625125,
-                "messageId": 1291606851317928037,
-                "security_enabled": true,
+                "channelId": 1260440254108930128,
+                "messageId": 1292979127816687637,
+                "security_enabled": false,
                 "open_time": "2024-10-04 10:44:28",
-                "close_time": "2024-10-04 09:54:26"
+                "close_time": "2024-10-08 05:37:25"
             }
         }
     ]
